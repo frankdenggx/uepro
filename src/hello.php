@@ -1,4 +1,4 @@
 <?php
   getinfo();
-  getinfo(); /*master1*/
+  getinfo(); /*master1*//*modified by B*/
 ?>
