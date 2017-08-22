@@ -1,0 +1,4 @@
+接口命名规范：
+Dao----一律使用I+XXX+Dao表示接口，使用XXX+Dao表示接口的实现类
+
+Service----一律使用I+XXX+Service表示接口，使用XXX+Service表示接口的实现类

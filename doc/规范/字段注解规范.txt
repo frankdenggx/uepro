@@ -1,0 +1,13 @@
+字段注解规范：
+普通属性：必须注解上列名、是否允许为空、字段长度，还可以根据要求设置默认值
+@Column(name="FICONCLS",nullable=true)
+@Length(max=100)
+连接属性(外键属性)：必须注明关系、列名、是否允许为空、空值异常处理，如果是集合还可以根据要求设置排序规则、过滤条件
+@NotNull
+	@ManyToOne(fetch = FetchType.EAGER)
+	@JoinColumn(name="FMODULE",nullable = false)
+	@Where(clause = TreeBase.WHERE_CLAUSE)
+	@NotFound(action=NotFoundAction.IGNORE)
+枚举属性：必须注明列名、存放下标/名称、是否允许为空，可以根据要求设置默认值
+@JSONField(serialize = false, deserialize = false)
+@Column(name="FDATAFORMAT",nullable=false)
