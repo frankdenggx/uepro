@@ -8,3 +8,4 @@ dev add 3
 master add 4
 dev add 4
 dev add 4.1
+dev add 4.2
