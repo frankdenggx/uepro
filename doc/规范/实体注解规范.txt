@@ -1,0 +1,16 @@
+实体注解规范：
+
+@Entity
+@Table(name = XXX.TABLE)
+@Where(clause = YYY.WHERE_CLAUSE)
+@SQLDelete(sql = YYY.DELETE_SQL_1 + YYY.TABLE + YYY.DELETE_SQL_2)
+public class XXX extends YYY {
+	/** LOG */
+	private static final Logger log=LoggerFactory.getLogger(XXX.class);
+	
+	private static final long serialVersionUID = -8994384781596033024L;
+	
+	/** TABLE NAME*/
+	public static final String TABLE = "UE_xxx_XXX";
+}
+其中XXX为实体的名字，YYY为集成虚体的名字，xxx表示模块简写

@@ -1,0 +1,11 @@
+模块划分规范：
+模块按照系统的统一结构进行划分，目前项目采用maven管理整个系统暂分为AppMessage、Business、
+CodeGen、Common、Doc、Parent、ShortenUrl、Sms、Web、Wechat，其中CodeGen是代码生成器，目前在此项目中禁止使用，
+Common是系统框架底层和统统的内容，Doc用来进行文档管理，ShortenUrl用来做短网址、Sms用来做短信、Web用来做与页面相关的内容，
+Wechat实现微信的后台功能和配置。
+系统管理(SYS)除了前端页面，全部在Common中实现，前端页面在Web下面的admin节点实现。
+订单管理(OMS)、计费管理(BMS)、报表管理(RPT)等模块，属于业务模块，在Business中实现。
+关于具体的目录节点，我将会尽快整理和完善出文档。
+
+
+
