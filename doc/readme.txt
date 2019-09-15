@@ -12,5 +12,3 @@ dev add 4.2
 dev add 4.3
 dev add 4.4
 dev add 4.5
-dev add 4.6
-dev add 4.7
